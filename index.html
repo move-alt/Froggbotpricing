@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Froggbot Pricing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F6FEE9;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        header {
+            background: #BCE2BD;
+            color: #988660;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #DAEBB3;
+        }
+        nav a {
+            color: #988660;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .pricing-table {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .pricing-plan {
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .pricing-plan h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .pricing-plan p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        .pricing-plan ul {
+            list-style: none;
+            padding: 0;
+        }
+        .pricing-plan ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        .pricing-plan .price {
+            font-size: 2em;
+            color: #333;
+        }
+        .pricing-plan .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #DAEBB3;
+            color: #988660;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        footer {
+            background: #BCE2BD;
+            color: #988660;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            position: relative;
+        }
+        .bot-animation {
+            width: 150px;
+            position: absolute;
+            top: 195px; /* Adjust this value to match the vertical position of the Free box */
+            left: 200px; /* Start 200px from the left edge */
+            animation: moveBot 20s linear infinite;
+        }
+        @keyframes moveBot {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(calc(100vw - 550px)); /* 150px for the width of the image and 200px from the left, 75px from the right */
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Froggbot Pricing</h1>
+    </header>
+    <nav>
+        <a href="https://frogg.store">About</a>
+        <a href="https://talents.frogg.store">Features</a>
+        <a href="https://money.frogg.store">Pricing</a>
+        <a href="https://info.frogg.store" target="_blank">Terms of Service & Privacy Policy</a>
+    </nav>
+    <div class="container">
+        <div id="pricing" class="pricing-table">
+            <div class="pricing-plan">
+                <h2>Free</h2>
+                <p class="price">$0/month</p>
+                <ul>
+                    <li>Basic moderation tools</li>
+                    <li>Access to fun commands</li>
+                    <li>Community support</li>
+                </ul>
+                <a href="#" class="button">Get Started</a>
+            </div>
+            <div class="pricing-plan">
+                <h2>Standard</h2>
+                <p class="price">$5/month</p>
+                <ul>
+                    <li>All Free features</li>
+                    <li>Advanced moderation tools</li>
+                    <li>Customizable settings</li>
+                    <li>Email support</li>
+                </ul>
+                <a href="#" class="button">Get Started</a>
+            </div>
+            <div class="pricing-plan">
+                <h2>Premium</h2>
+                <p class="price">$15/month</p>
+                <ul>
+                    <li>All Standard features</li>
+                    <li>24/7 priority support</li>
+                    <li>Exclusive premium commands</li>
+                    <li>Early access to new features</li>
+                </ul>
+                <a href="#" class="button">Get Started</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Froggbot. All rights reserved.</p>
+        <img src="frogg.gif" alt="Froggbot" class="bot-animation">
+    </footer>
+</body>
+</html>
